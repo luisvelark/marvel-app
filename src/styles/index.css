@@ -1,0 +1,17 @@
+/* GOOGLE FONTS */
+@import url("https://fonts.googleapis.com/css2?family=Fira+Sans:ital,wght@1,400;1,500;1,600;1,700&display=swap");
+
+:root {
+  --text-color: #323b60;
+}
+
+body {
+  width: 100%;
+  height: 100%; /*será 100vh cuando la pagina sea fija,es decir sin scroll*/
+  font-size: 1rem;
+  font-weight: 400;
+  font-style: italic;
+  font-family: "Fira Sans", sans-serif;
+  line-height: 1rem;
+  color: var(--text-color);
+}
