@@ -18,25 +18,37 @@
   <link rel="stylesheet" href="../src/styles/index.css">
 
   <!-- STYLE COMPONENTS -->
+  <link rel="stylesheet" href="../src/styles/components/login.css">
 </head>
 
 <body>
-  <div>
-    <div>
+  <main class="main">
+    <div class="container-login">
       <form>
+
         <div class="mb-3">
-          <label for="exampleInputEmail1" class="form-label">Email address</label>
-          <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
-          <div id="emailHelp" class="form-text">We'll never share your email with anyone else.</div>
+          <label for="exampleInputEmail1" class="form-label">Email</label>
+          <input type="email" class="form-control is-valid" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="luisvelark@gmail.com" required>
+          <div class="valid-feedback">
+            Looks good!
+          </div>
         </div>
+
         <div class="mb-3">
           <label for="exampleInputPassword1" class="form-label">Password</label>
-          <input type="password" class="form-control" id="exampleInputPassword1">
+          <input type="password" class="form-control is-valid" id="exampleInputPassword1" required>
+          <div class="valid-feedback">
+            Looks good!
+          </div>
+        </div>
+
+        <div class="mb-3">
+          <p class="fs-6 text-end">Forgot Password?</p>
         </div>
         <button type="submit" class="btn btn-primary">Submit</button>
       </form>
     </div>
-  </div>
+  </main>
 
 
 
