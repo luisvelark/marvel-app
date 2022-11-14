@@ -1,0 +1,9 @@
+.sin-eventos{
+  display: none;
+}
+
+.eventos{
+  display: block;
+  text-align: center;
+  padding: 2rem;
+}
