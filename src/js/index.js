@@ -154,8 +154,6 @@ async function Consulta() {
     const $marvelContainer = document.getElementById("marvel-container");
     const $evento = document.getElementById("evento");
     let content = "";
-    // const url =
-    //   "https://gateway.marvel.com:443/v1/public/characters?ts=1&apikey=46c274f04d1126f530e6799dde13d838&hash=e47cc4b46b8c303b931ab3602b751e55";
     const url =
       "https://gateway.marvel.com:443/v1/public/events?ts=1&apikey=46c274f04d1126f530e6799dde13d838&hash=e47cc4b46b8c303b931ab3602b751e55";
 
@@ -167,7 +165,7 @@ async function Consulta() {
     for (const hero of datos.data.results) {
       content += `
       <div class="col-md-6 col-sm-12 col-lg-4">
-        <div class="card" style="width: 18rem;">
+        <div class="card" style="width: 18rem;margin: auto;">
           <img src="${hero.thumbnail.path}.${hero.thumbnail.extension}" class="card-img-top hero" alt="${hero.title}">
           <div class="card-body">
             <h5 class="card-title">${hero.title}</h5>
